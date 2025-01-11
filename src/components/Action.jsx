@@ -12,7 +12,7 @@ const CallToAction = () => {
                             you or your company <br />
                             forward.
                         </h2>
-                        <button className="bg-[#C62127] text-white border border-white px-6 py-3 rounded-xl text-xl font-semibold hover:bg-white hover:text-[#C62127] transition duration-300">
+                        <button className="mb-6 bg-[#C62127] text-white border border-white px-6 py-3 rounded-xl text-xl font-semibold hover:bg-white hover:text-[#C62127] transition duration-300">
                             Get in Touch
                         </button>
                     </div>

@@ -1,4 +1,3 @@
-// src/components/sections/AssistSection.jsx
 import React from 'react';
 import InfoBoxLeft from '../InfoBoxLeft';
 import InfoBoxRight from '../InfoBoxRight';
@@ -12,21 +11,22 @@ const AssistSection = () => {
                 <p className="text-gray-500 text-sm mt-6">HOW WE WORK</p>
             </div>
 
-            {/* Mobil için roket görseli */}
-            <div className="block lg:hidden mt-8">
+            {/* Mobil ve Tablet için roket görseli */}
+            <div className="block xl:hidden mt-8">
                 <div className="relative flex items-center justify-center">
-                    <div className="absolute bg-[#C62127] rounded-full w-[400px] h-[400px] "></div>
+                    <div className="absolute bg-[#C62127] rounded-full w-72 md:w-96 h-72 md:h-96"></div>
                     <img
                         src="/rocket.png"
                         alt="Center"
-                        className="relative w-80 h-auto object-contain"
+                        className="relative w-64 md:w-80 h-auto object-contain"
                     />
                 </div>
             </div>
 
             {/* Info Kutular ve Merkez Görsel */}
-            <div className="mt-16 flex flex-col lg:flex-row justify-center items-center gap-16">
-                <div className="space-y-12 lg:order-1 px-16 md:pr-32 gap-16">
+            <div className="mt-16 flex flex-col xl:flex-row justify-center items-center gap-8 md:gap-16">
+                {/* Sol Kutular */}
+                <div className="space-y-8 md:space-y-12 xl:order-1 px-4 md:px-16 xl:pr-32 w-full xl:w-auto">
                     <InfoBoxLeft
                         image="/buyutec.png"
                         title="Need Analysis"
@@ -40,16 +40,17 @@ const AssistSection = () => {
                 </div>
 
                 {/* Masaüstü için roket görseli */}
-                <div className="hidden lg:inline-flex relative items-center justify-center mb-12 lg:mb-32 lg:order-2">
-                    <div className="absolute bg-[#C62127] rounded-full w-[400px] h-[400px] lg:mt-10"></div>
+                <div className="hidden xl:inline-flex relative items-center justify-center mb-12 xl:mb-32 xl:order-2">
+                    <div className="absolute bg-[#C62127] rounded-full w-96 h-96 xl:mt-10"></div>
                     <img
                         src="/rocket.png"
                         alt="Center"
-                        className="relative w-72 h-auto object-contain"
+                        className="relative w-80 h-auto object-contain"
                     />
                 </div>
 
-                <div className="space-y-12 lg:order-3 px-16 md:pl-32">
+                {/* Sağ Kutular */}
+                <div className="space-y-8 md:space-y-12 xl:order-3 px-4 md:px-16 xl:pl-32 w-full xl:w-auto">
                     <InfoBoxRight
                         image="/puzzle.png"
                         title="Tailor Made Solutions"
@@ -66,4 +67,4 @@ const AssistSection = () => {
     );
 };
 
-export default AssistSection; 
+export default AssistSection;
