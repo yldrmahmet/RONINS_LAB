@@ -9,7 +9,7 @@ const ContactSection = () => {
                 <div className="flex flex-col md:flex-row md:justify-center items-center gap-6 md:gap-12">
                     <ContactBox
                         image="/germany.png"
-                        title="403 Street, Avenue, NewYork USA."
+                        title="Bruckstraße 1170734 Fellbach"
                     />
                     <ContactBox
                         image="/mail.png"
