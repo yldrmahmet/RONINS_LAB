@@ -11,7 +11,7 @@ const AboutPage = () => {
                 <Header />
                 <div className="container mx-auto px-4 py-16 md:py-20 relative md:mb-24">
                     {/* Text Content */}
-                    <div className="text-center mb-8 md:mb-12 relative">
+                    <div className="text-left md:text-center mb-8 md:mb-12 relative">
                         <p className="text-red-500 text-sm md:text-base mb-2">Who We Are</p>
                         <h1 className="text-3xl md:text-5xl font-bold text-black">About Us</h1>
                     </div>
@@ -85,7 +85,7 @@ const AboutPage = () => {
                     <div className="hidden md:block md:col-span-1"></div>
 
                     {/* Mobilde İkinci İki Resim */}
-                    <div className="flex md:hidden -mr-4 mb-8">
+                    <div className="flex md:hidden -mr-0 mb-8">
                         <div className="w-1/2 aspect-square h-40 pr-2">
                             <img
                                 src="/about_left_bottom.png"
@@ -93,7 +93,7 @@ const AboutPage = () => {
                                 className="w-full h-full object-cover rounded-lg"
                             />
                         </div>
-                        <div className="w-1/2 aspect-square h-48 pl-2">
+                        <div className="w-1/2 aspect-square h-48">
                             <img
                                 src="/about_bottom.png"
                                 alt="Large image"
@@ -103,10 +103,10 @@ const AboutPage = () => {
                     </div>
 
                     {/* Sağ İçerik */}
-                    <div className="space-y-4 md:col-span-4">
-                        <h2 className="text-2xl md:text-3xl font-bold">Yenilikçi Çözümlerle<br />
+                    <div className="text-left space-y-4 md:col-span-4">
+                        <h2 className="text-5xl md:text-3xl font-bold leading-tight md:mt-16">Yenilikçi Çözümlerle<br />
                             İşinizi Büyütün</h2>
-                        <p className="text-gray-600 text-sm md:text-base">
+                        <p className="text-gray-600 text-sm md:text-base leading-6">
                             Ronins Lab, Türkiye ve Almanya'da ofisleri bulunan global bir yazılım firmasıdır.
                             Web2 ve Web3 teknolojilerinde uzmanlaşan şirketimiz, orta ve küçük ölçekli
                             işletmelerin dijitalleşme süreçlerini kolaylaştırmak için yenilikçi çözümler sunar.
@@ -137,9 +137,9 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 py-16 text-center">
-                <p className="text-red-500 text-sm mb-2">OUR MISSION</p>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Sustainable & Reliable Innovation</h2>
+            <div className="container mx-auto px-4 py-16 text-left md:text-center">
+                <p className="text-gray-500 font-bold text-base mb-2">OUR MISSION</p>
+                <h2 className="text-5xl md:text-4xl font-bold mb-6 leading-tight">Sustainable & Reliable Innovation</h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
                     Misyonumuz, işletmelerin dijital hedeflerine ulaşmalarını kolaylaştırmak için
                     ölçeklenebilir ve güvenilir yazılım çözümleri sunmaktır.

@@ -6,10 +6,10 @@ import PageInfoBox from '../PageInfoBox';
 const WhyChooseUsSection = () => {
     return (
         <div className="bg-[#f1f1f1]">
-            <div className="pt-16 md:pt-32 px-4 md:px-40 bg-gradient-to-b from-[#f1f1f1] via-white to-white">
-                <div className="max-w-[1200px] mx-auto bg-white rounded-[30px] py-32 flex flex-col items-center shadow-lg overflow-hidden">
+            <div className="pt-8 md:pt-16 px-4 md:px-40 bg-gradient-to-b from-[#f1f1f1] via-white to-white">
+                <div className="max-w-[1200px] mx-auto bg-white rounded-[30px] py-12 flex flex-col items-center shadow-lg overflow-hidden">
                     <p className="text-base text-gray-500 mb-2">Why Choose Us</p>
-                    <h2 className="text-4xl font-bold text-[#C62127] mb-36 md:mb-12">RoninsLab</h2>
+                    <h2 className="text-4xl font-bold text-[#C62127] mb-36 md:mb-8">RoninsLab</h2>
 
                     <div className="flex flex-col md:flex-row justify-center gap-12 md:gap-12 mb-16 px-4">
                         <CultureBox

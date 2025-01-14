@@ -4,7 +4,7 @@ import InfoBoxRight from '../InfoBoxRight';
 
 const AssistSection = () => {
     return (
-        <div className="container mx-auto px-4 md:px-8 mt-20">
+        <div id="assist-section" className="container mx-auto px-4 md:px-8 mt-20 md:mt-0 md:pt-0">
             <div className="text-center">
                 <h2 className="text-black text-4xl font-bold">How we can assist</h2>
                 <h2 className="text-[#C62127] text-4xl font-bold">your business</h2>

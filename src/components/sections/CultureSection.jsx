@@ -4,7 +4,7 @@ import CultureBox from '../CultureBox';
 
 const CultureSection = () => {
     return (
-        <div className="bg-[#f1f1f1] mt-10 md:mt-0">
+        <div className="bg-[#f1f1f1] mt-10 md:-mt-20">
             <div className="w-full">
                 <div className="relative h-[750px] md:h-[600px] w-full">
                     <img
@@ -42,7 +42,7 @@ const CultureSection = () => {
                                 description="Easy user experience suitable for different devices, operating systems and screen sizes"
                             />
                         </div>
-                        <div className="h-32 md:h-16"></div>
+                        <div className="h-8 md:h-0"></div>
                     </div>
                 </div>
             </div>

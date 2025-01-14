@@ -12,7 +12,13 @@ const CallToAction = () => {
                             you or your company <br />
                             forward.
                         </h2>
-                        <button className="mb-6 bg-[#C62127] text-white border border-white px-6 py-3 rounded-xl text-xl font-semibold hover:bg-white hover:text-[#C62127] transition duration-300">
+
+                        <button className="mb-6 bg-[#C62127] text-white border border-white px-6 py-3 rounded-xl text-xl font-semibold hover:bg-white hover:text-[#C62127] transition duration-300"
+                            onClick={() => {
+                                window.open('https://mail.google.com/mail/?view=cm&fs=1&to=hello@roninslab.xyz', '_blank');
+                                setIsMenuOpen(false);
+                            }}
+                        >
                             Get in Touch
                         </button>
                     </div>

@@ -6,20 +6,6 @@ const Header = () => {
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(true);
 
-    const scrollToContact = () => {
-        const element = document.getElementById('contact');
-        if (element) {
-            const offset = 200; // istediğiniz piksel kadar yukarı
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
-    };
-
     const scrollToAction = () => {
         const element = document.getElementById('action');
         if (element) {
@@ -56,12 +42,6 @@ const Header = () => {
                         About
                     </Link>
                     <button
-                        className="text-gray-700 hover:bg-gray-100 px-2 py-1 rounded-md"
-                        onClick={scrollToContact}
-                    >
-                        Contact
-                    </button>
-                    <button
                         className="bg-[#C62127] text-white px-4 py-2 rounded-3xl hover:bg-red-600 transition"
                         onClick={scrollToAction}
                     >
@@ -83,34 +63,30 @@ const Header = () => {
 
             {isMenuOpen && (
                 <div className="fixed top-0 left-0 w-full h-screen bg-[#F1f1f1] md:hidden z-40">
-                    <div className="flex flex-col items-center justify-center h-full -mt-16">
-                        <Link
-                            to="/"
-                            className="text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-md text-xl font-bold"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            to="/about"
-                            className="text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-md text-xl font-bold mt-8"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            About
-                        </Link>
+                    <div className="flex flex-col items-center justify-between h-full pt-32 pb-16">
+                        {/* Navigation Links Container */}
+                        <div className="flex flex-col items-center space-y-12">
+                            <Link
+                                to="/"
+                                className="text-gray-700 hover:bg-gray-100 px-8 py-3 rounded-md text-2xl font-bold"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Home
+                            </Link>
+                            <Link
+                                to="/about"
+                                className="text-gray-700 hover:bg-gray-100 px-8 py-3 rounded-md text-2xl font-bold"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                About
+                            </Link>
+                        </div>
+
+                        {/* Get in Touch Button - Fixed at bottom */}
                         <button
-                            className="text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-md text-xl font-bold mt-8"
+                            className="bg-[#C62127] text-white px-8 py-4 rounded-3xl hover:bg-red-600 transition text-2xl font-bold w-64"
                             onClick={() => {
-                                navigate('/contact');
-                                setIsMenuOpen(false);
-                            }}
-                        >
-                            Contact
-                        </button>
-                        <button
-                            className="bg-[#C62127] text-white px-6 py-3 rounded-3xl hover:bg-red-600 transition text-xl font-bold mt-48"
-                            onClick={() => {
-                                navigate('/contact');
+                                window.open('https://mail.google.com/mail/?view=cm&fs=1&to=hello@roninslab.xyz', '_blank');
                                 setIsMenuOpen(false);
                             }}
                         >
